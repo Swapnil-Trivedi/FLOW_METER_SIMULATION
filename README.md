@@ -22,7 +22,7 @@ The server script that's provided is made keeping the same things in mind
 ### CLIENT
 our client is a device with a static ip. the device when sucessfully installed is restarted , the transmission of data takes place between the server and device. The calculated data from the server is displayed on the devices mount.
 
-##### The implementation the project is through a simple server and client model
+##### The implementation of the project is through a simple server and client model
 
 ### Points about the SERVER script
 
