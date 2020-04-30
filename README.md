@@ -16,13 +16,30 @@ computation on the data recieved from the client and send it back.
 
 ## APPROACH AND IMPLEMENTATION
 ### SERVER
-In order to form our model we want a server that can act as a PLC for Computation. A PLC can be thought of a special computer that performs specific tasks. A PLC have multiple Input/Output ports whee multiple devices are connected, each port is connectted using Ethernet cable or via wireless connection.
+In order to form our model we want a server that can act as a PLC for Computation. A PLC can be thought of a special computer that performs specific tasks. A PLC have multiple Input/Output ports where multiple devices are connected, each port is connectted using Ethernet cable or via wireless connection.
 
 The server script that's provided is made keeping the same things in mind
 ### CLIENT
 our client is a device with a static ip. the device when sucessfully installed is restarted , the transmission of data takes place between the server and device. The calculated data from the server is displayed on the devices mount.
 
 ##### The implementation of the project is through a simple server and client model
+###### The Server and Client files are provided above with proper description
+The client2 file is a clone of client file with different device information 
+## OUTPUT AND WORKING
+- Setting up the server and clients.
+![](images/out1.png)
 
-### Points about the SERVER script
+- Registering both devices on server. 
+![](images/out2.png)
 
+- Starting only Device One to see if server accept incoming client during transmission with another client.
+![](images/out4.png)
+
+- Connecting the second device, we can see the data from both the clients is processed simultaneously.
+![](images/out5.png)
+
+- Our server needs to be active at all the time, even when devices are disconnected we make it sure by using exception handling.
+![](images/out7.png)
+
+- At the end we simply check for a scenario that is what if our server is down ??
+![](images/out8.png)
